@@ -110,11 +110,6 @@ def unshuffle(XK, D):
 
 
 # Util functions
-def matmult(a,b):
-    zip_b = zip(*b)
-    return [[sum(ele_a*ele_b for ele_a, ele_b in zip(row_a, col_b))
-             for col_b in zip_b] for row_a in a]
-
 def hex_matrix(m):
     hex_matrix = []
     for row in m:
